@@ -248,8 +248,8 @@ def upload_csv():
 
 
 
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["SERPAPI_API_KEY"] = "f0baba00-997b-11ee-9eb4-33f0d2bd6ba5"
+os.environ["OPENAI_API_KEY"] = "PUT_YOUR_OWN_OPENAI_API_KEY"
+os.environ["SERPAPI_API_KEY"] = "PUT_YOUR_OWN_SERP_API_KEY"
 chain = load_qa_chain(OpenAI(), chain_type="stuff")
 
 
@@ -286,7 +286,7 @@ def clean_seafood_text(seafood_text):
     cleaned_text = cleaned_text.replace('\n', '')
     return cleaned_text.strip()
 
-os.environ['_BARD_API_KEY'] = 'eAg5Ny9NSE7Cvsn0IIY-O9nVbRGfCb66N7vDjTti0wkkEMq3Iqln5E_UBYwJPViCHBlEtA.'
+os.environ['_BARD_API_KEY'] = 'PUT_YOUR_OWN_BARD_API_KEY'
 
 chat_history1 = [
     {'question': 'What is your name?', 'answer': 'My name is ChatGPT.'},
